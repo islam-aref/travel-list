@@ -1,0 +1,60 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  background-color: #c2811f;
+}
+body {
+  font-family: sans-serif;
+  background-color: #c2811f;
+}
+
+.flashcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.flashcards div {
+  border: 1px solid #e6dfdf;
+  background: linear-gradient(
+    135deg,
+    #f4a226 25%,
+    #a28c5d 50%,
+    #f4a226 75%
+  ); /* Diagonal gradient */
+  color: rgb(255, 255, 255);
+  border-radius: 50px; /* Super-rounded corners */
+  aspect-ratio: 2 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.8s ease;
+}
+
+div.selected {
+  border: 1px solid #64dc43;
+  background-color: #51e429;
+  color: #281919;
+  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    #79ce68 25%,
+    #199c3a 50%,
+    #79ce68 75%
+  ); /* Diagonal gradient */
+}
